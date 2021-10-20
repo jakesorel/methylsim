@@ -1,0 +1,13 @@
+Basic Ising model implemented.
+
+Model refinement:
+- Pinning transition rates of "mirrored states"
+- Altering rates as a function of real genomic distance between methylation sites? Could assume some simple functional form.
+
+Analysis:
+- Simulating 'reads' (i.e. given a set of start and end-points, spit out the methylation state at the end of the simulation)
+- Measuring instances of various features of methylation. e.g. the local 'states', global methylation rate, binning into chunks and taking averages etc. etc.
+
+Fitting?
+- ABC method to fit transition rates to the measured reads for a given sequence. Probably best to do this via the instances of 'states' in individual reads, or concocting some measure of the 'distance' between a real read and a simulated one (or rather a set of real reads and a set of simulated ones).
+-->> no real experience here on this front...
